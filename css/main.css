@@ -1,0 +1,88 @@
+/*!!!!!!!!!!! variables 4 - stylier
+{
+}*/:root{--colorA: #00486a;/*//light blue;*/--colorB: #e96624;/*//dark blue;*/--colorC: #805374;--colorNavPrimary: blue;--colorNavPrimaryHover: green;--colorNavPrimaryInactive: silver;--colorNavReversePrimary: gold;--colorNavAltPrimaryHover: purple;--colorNavAltPrimaryInactive: black;/*//orange;*//*//tbd*/--defaultInterval: 20px;--defaultBodyFontSize: 20px;--defaultFooterFontSize: var(--defaultBodyFontSize);--defaultTransition: all 500ms ease-in-out;--defaultTransitionDuration: 500ms;--maxWidth: 1080px;--navbarFontSize: 20px;--primaryFontFamily:'jost', cursive;--accentFontStyle: italic;--defaultBorderRadius: 10px;--titleSize: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));--headerSize: calc(24px + (50 - 22) * ((100vw - 300px) / (1600 - 300)));--h2rSize: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));--headerFontFamily: "trade gothic extended";--headerLetterSpacing: 5px;--defaultPadding: 20px;--defaultElementorPadding: 10px;--elementorPaddingCorrection: 20px;--defaultButtonBkg: var(--colorB);--defaultButtonTextSize: 24px;--smallButtonTextSize: 16px;--defaultButtonTextColor: var(--colorA);--defaultButtonHoverTextColor: white;--defaultButtonPadding: 12px;--defaultButtonTextWeight: bold;--defaultButtonHoverBkg: var(--colorA);--defaultButtonBorderRadius: var(--borderRadius);--defaultButtonTransition: var(--defaultTransition);--defaultButtonSize: 300px;--navbarHeight: 150px;--navbarHeightScrolled: 100px;}/*!!!!!!!!!!! optoins
+{
+}*/#SD.hideTopMenu DIV#responsiveTrigger{display:none;}/*!!!!!!!!!!! structure
+{
+}*/.fixedPosition{position:fixed;}.boxedWidth{max-width:var(--maxWidth);margin-left:auto;margin-right:auto;}#primary.boxedWidth #main ARTICLE .entry-content{padding:var(--defaultInterval);}DIV#sliderCache,DIV.sdcache{display:none;}/*!!!!!!!!!!! responsiveness
+{
+}*/@media only screen and (max-width:768px){SECTION#navbar{display:none !important;border:1px solid black;}}@media only screen and (max-width:1080px) and (min-width:768px){.boxedWidth{padding:calc(var(--defaultInterval)*1);}}/*!!!!!!!!!!! utility
+{
+}*/DIV.SDconsole{background-color:black;width:100%;color:;padding:12px;position:fixed;bottom:20px;z-index:9999999;display:none;}.sdLabel{display:none;}DIV.SDconsole H1{color:white;}/*!!!!!!!!!!! universal
+{
+}*/#SD DIV.pageTitle{display:none;}#primary DIV.inside-article DIV.entry-content{/*default padding for all content (other than elementor)*/padding:var(--defaultMargin);}.contained-content.elementor-page #primary DIV.entry-content{/*no padding for elementor content;*/padding:0px;}/*BODY.page.SD DIV.inside-article
+{
+	padding:var(--defaultMargin);
+}*//*!!!!!!!!!! header
+{
+}*//*!!!!!!!!!!! navigation
+{
+}*//*SECTION#navbar.scrolled DIV.logo.elementor-column
+{
+	width: 15%;
+}*//*!!!!!!!!!! mobilemenu
+{
+}*//*!!!!!!!!!! responsivemenu
+{
+}*//*DIV.primary.navigation DIV.menucontent .column
+{
+	display: flex;
+}*//*MAIN#main ARTICLE
+{
+	margin-top: 136px !important;
+}*//*!!!!!!!! elementor elements: posts
+{
+}*//*!!!!!!!! Body elements
+{
+}*//*!!!!!!!! genereatepress  elements
+{
+}*//*!!!!!!!!! Nav: header
+{
+}*/#page FORM INPUT,#page FORM TEXTAREA{border-radius:var(--borderRadius);max-width:131%;}/*!!!!!!!!! Nav: footer
+{
+}*//*!!!!!!!!!!! typography
+{
+}*//*BODY
+{
+	font-family:var(--primaryFontFamily) !important;
+}*/BODY#SD #page{font-family:var(--primaryFontFamily);}HEADER.entry-header H1.entry-title{font-size:var(--titleSize);/*padding:var(--defaultPadding);*//*padding:calc (var(--defaultPadding) + var(--elementorPaddingCorrection));*/padding:var(--defaultMargin);/*padding:var(--defaultPadding);*/}@media only screen and (max-width:753px){HEADER.entry-header H1.entry-title{margin-top:0;padding-top:0;margin-bottom:0;padding-bottom:0px;}}#SD H1,#SD H2,#SD H3,#SD H4,#SD H5,#SD H6{margin-bottom:0px;font-family:var(--primaryFontFamily);padding-top:var(--defaultPadding);}.SD H2{font-weight:bold;}/*!!!!!!!!! headers
+{
+}*//*!!!!!!!!! footer
+{
+}*/@media only screen and (min-width:752px){}@media only screen and (max-width:753px){}.footer .identity .logo{}.footer .identity .logo{margin-left:auto;width:300px;margin-right:auto;}.footer .boxedWidth{text-align:center;display:flex;flex-direction:column;}/*!!!!!!!! footer social
+{
+}*/.footer .social LI .icon{width:75px;}.footer .social LI{list-style:none;padding:0px;margin:0px;}.footer .social UL{padding:0px;margin:0px auto;display:flex;text-align:center;display:flex;justify-content:center;}/*DIV.SDfootersocial UL
+{
+	width: 50px;
+}*//*!!!!!!!! footer menu
+{
+}*/.site-footer{display:flex;flex-direction:column;font-family:var(--primaryFontFamily);background-color:#FEFEFE;margin-top:;padding-top:calc(var(--defaultInterval)*1);}.footer .appendix .menu UL{display:flex;padding:0px;margin:0px;justify-conten;}.site-footer .social LI{height:calc(var(--defaultInterval)*3);width:calc(var(--defaultInterval)*3);padding:calc(var(--defaultInterval)*.5);flex-direction:row;justify-content:center;align-content:center;align-items:center;cursor:pointer;}.site-footer .social LI A:hover path{fill:var(--colorB);}.site-footer .social LI A path{transition:var(--defaultTransition);}.footer .appendix UL.menu{justify-content:center;align-content:center;align-items:center;display:flex;list-style:none;flex-wrap:wrap;margin-bottom:calc(var(--defaultInterval)*.5);}.footer .appendix UL.menu LI{justify-content:center;align-content:center;align-items:center;list-style:none;cursor:pointer;padding:calc(var(--defaultInterval)*.125) calc(var(--defaultInterval)*.25);font-family:;margin:0px;}DIV.footer .appendix DIV.credits{text-align:center;text-transform:uppercase;}DIV.credits A{white-space:nowrap;}/*!!!!!!!!! elementor elements
+
+{
+}*//*!!!!!!!!! plugins
+{
+}*//*!!!!!!! Plugin: XXXXX
+{
+}*//*!!!!!!! Plugin: XXXXX
+{
+}*//*!!!!!!! event on module and poages
+{
+}*//*!!!!!!!!!!! pages
+{
+}*//*!!!!!!!!!!! No menu page
+{
+}*//*!!!!!!! Page template: home
+{
+}*//*!!!!!! elementor objects
+{
+}*//*!!!!!! typography and construction
+{
+}*//*!!!!!! section: banner
+{
+}*//*!!!!!! section: home
+{
+}*//*!!!!!! section: hero
+{
+}*//*!!!!!!! Page type: landing pages
+{
+}*/

@@ -1,0 +1,101 @@
+.page-template-SDhome .hero
+{
+	background-color: #0B50A8;
+	width: 100%;
+	height: 100%;
+}
+.page-template-SDhome .hero .image
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-position: center;
+	background-size: cover;
+	border: 1px solid black;
+	z-index: 50;
+}
+.page-template-SDhome .hero .current.image
+{
+	z-index: 100;
+}
+.page-template-SDhome .hero .next.image
+{
+	z-index: 75;
+}
+.page-template-SDhome .hero .interface
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	padding: calc(var(--defaultInterval)*.5) calc(var(--defaultInterval)*.5) calc(var(--defaultInterval)*.5) 0;
+	background-color: white;
+	/*+border-radius:0 var(--defaultBorderRadius) 0 0;*/
+	-moz-border-radius: 0 var(--defaultBorderRadius) 0 0;
+	-webkit-border-radius: 0 var(--defaultBorderRadius) 0 0;
+	-khtml-border-radius: 0 var(--defaultBorderRadius) 0 0;
+	border-radius:0 var(--defaultBorderRadius) 0 0;
+}
+.page-template-SDhome .hero .interface.inactive
+{
+	pointer-events: none;
+}
+.page-template-SDhome .hero .interface .button
+{
+	width: calc(var(--defaultInterval)*2);
+	background-color:var(--colorNavPrimary);
+	border-radius: 100%;
+	height: calc(var(--defaultInterval)*2);
+	padding: 0px;
+	margin-left: calc(var(--defaultInterval)*.5);
+	transition:var(--defaultTransition);
+}
+.page-template-SDhome .hero .text
+{
+	position: absolute;
+	height: 100%;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.page-template-SDhome .hero.notReady .text
+{
+	display: none;
+}
+.page-template-SDhome .hero.notReady .interface
+{
+	display: none;
+}
+/*.page-template-SDhome .hero.notReady .image
+{
+	opacity: 0;
+}*/
+.page-template-SDhome .hero .text .title
+{
+	position: absolute;
+	font-size:var(--titleSize);
+	font-style: italic;
+	width: 2000px;
+	color: white;
+	width: 100%;
+	position: relative;
+	display: block;
+}
+.page-template-SDhome .hero .interface .button:hover
+{
+	background-color:var(--colorNavPrimaryHover);
+}
+.page-template-SDhome .hero .http://www.lodestarcounseling.com/wp-admin/post.php?post=17291&action=edithttp://www.lodestarcounseling.com/wp-admin/post.php?post=17291&action=edittext A.button
+{
+	font-weight: bold;
+}
+.page-template-SDhome .hero .text a.button
+{
+	opacity: 0.5;
+}
+.page-template-SDhome-php .hero .interface .button.prev
+{
+}

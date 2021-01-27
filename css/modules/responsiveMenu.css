@@ -1,0 +1,231 @@
+/*@media only screen and (min-width: 769px)
+{
+	.SD DIV#responsiveTrigger
+	{
+		display: none;
+	}
+}*/
+#responsiveTrigger
+{
+	width: calc(var(--defaultInterval)*2.5);
+	height: calc(var(--defaultInterval)*2.5);
+	background-color: white;
+	border-radius: 100%;
+	position: fixed;
+	right: calc(var(--defaultInterval)*1);
+	top: calc(var(--defaultInterval)*1);
+	z-index: 200100;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	transition: all 2000ms ease-in-out;
+	transition:var(--defaultTransition);
+	cursor: pointer;
+	border:5px solid var(--colorA);
+}
+#responsiveTrigger:hover
+{
+	background-color:var(--colorA);
+	border: 5px solid white;
+}
+DIV#responsiveTrigger.loading
+{
+	opacity: 0;
+}
+H1.loading
+{
+	font-style: italic;
+}
+DIV#responsiveTrigger .bar
+{
+	height: 6px;
+	width: calc(var(--defaultInterval)*1.5);
+	background:var(--colorA);
+	border-radius: 3px;
+	position: absolute;
+	transition:var(--defaultTransition);
+}
+DIV#responsiveTrigger:hover .bar
+{
+	background: white;
+}
+DIV#responsiveTrigger .bar:nth-child(1)
+{
+	transform: translateY(-8px);
+}
+DIV#responsiveTrigger .bar:nth-child(3)
+{
+	transform: translateY(8px);
+}
+#responsiveTrigger.active
+{
+	background-color: white;
+	border-color:var(--colorB);
+}
+DIV#responsiveTrigger.active:hover .bar
+{
+	background:var(--colorB);
+}
+DIV#responsiveTrigger.active .bar:nth-child(1)
+{
+	margin-top: 0;
+	transform: rotate(45deg);
+}
+DIV#responsiveTrigger.active .bar:nth-child(3)
+{
+	margin-top: 0;
+	transform: rotate(-45deg);
+}
+DIV#responsiveTrigger.active .bar:nth-child(2)
+{
+	opacity: 0;
+}
+#responsiveTrigger.inactive:hover
+{
+	/*background-color:var(--primaryColorB);*/
+}
+#responsiveMenu
+{
+	background-color:var(--colorA);
+	width: 100%;
+	height: 100%;
+	right: -100%;
+	position: fixed;
+	z-index: 20000;
+	top: 0;
+	margin: 0;
+	display: ;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+DIV#responsiveMenu UL
+{
+	padding: calc(var(--defaultInterval)*1);
+	margin: 0px;
+	text-align: center;
+	font-family:var(--primaryFontFamily);
+	font-size: ;
+	text-transform: uppercase;
+	letter-spacing: 0.3vw;
+	width: 100%;
+}
+DIV#responsiveMenu UL LI
+{
+	list-style: none;
+	overflow: hidden;
+	text-align: left;
+}
+DIV#responsiveMenu UL LI A
+{
+	cursor: pointer;
+	transition:var(--defaultTransition) !important;
+	text-align: left;
+}
+DIV#responsiveMenu UL LI A DIV
+{
+	margin-right: calc(var(--defaultInterval)*1);
+}
+DIV#responsiveMenu UL#menu-primary UL
+{
+	padding: 0;
+	margin: 0px;
+	text-align: center;
+}
+#responsiveMenu #menu-primary LI A DIV
+{
+	list-style: none;
+	padding: 0;
+	font-weight: bold;
+	color: white;
+	font-size: calc(32px + (72 ) * ((100vw - 300px) / (1600 - 300)));
+	transition:var(--defaultTransition);
+}
+DIV#responsiveMenu UL#menu-primary > LI > A:hover *
+{
+}
+#responsiveMenu #menu-primary LI A:hover DIV
+{
+	color:var(--colorB) !important;
+}
+DIV#responsiveMenu UL#menu-primary UL > LI
+{
+	list-style: none;
+}
+DIV#responsiveMenu UL#menu-primary UL > LI > A
+{
+	list-style: none;
+	padding: 0;
+	font-weight: bold;
+	color: white;
+	color:var(--colorNavAltPrimary);
+	transition:var(--defaultTransition);
+}
+#responsiveMenu H3
+{
+	text-align: center;
+	margin-bottom: calc(var(--defaultInterval)*1);
+}
+DIV#responsiveMenu UL#menu-social
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+DIV#responsiveMenu UL#menu-social DIV.icon SVG
+{
+	width: 50px;
+}
+#SD #responsiveMenu .menu-social-container
+{
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	margin: 0;
+	background-color: ;
+}
+#SD #responsiveMenu #menu-social
+{
+	display: flex;
+	justify-content: flex-start;
+}
+#responsiveMenu #menu-social
+{
+}
+#SD #responsiveMenu .menu-social-container UL
+{
+	padding: calc(var(--defaultInterval)*1);
+}
+#responsiveMenu .menu-primary-container
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-start;
+	align-items: flex-start;
+}
+#responsiveMenu #menu-social.menu LI
+{
+	width: 100px;
+}
+#responsiveMenu #menu-social path
+{
+	fill:white;
+	transition:var(--defaultTransition);
+	text-shadow: 0 0;
+}
+#responsiveMenu #menu-social LI:hover path
+{
+	fill:var(--colorB);
+	background-repeat: ;
+}

@@ -1,0 +1,155 @@
+var 
+$ = jQuery
+    svg = $("svg"),
+    svgLoadDelay = 2200,
+    gsDefaultInterval = .5
+    // face = $("#social-facebook");
+
+
+   ;
+// });
+
+$(document).ready(function() {
+
+    setTimeout(function() {
+        var
+        responsiveMenu = {
+            init: function (){        
+                state = "off"; // can be off or on
+                $wrapper = $('#responsiveMenu');
+
+                $($wrapper ).click(function() {
+                    console.log ('deactivate menu');
+                    responsiveMenu.deactivate();
+                 
+                    });
+                menuActivateTL = new TimelineMax ({paused: true});
+             
+                menuActivateTL
+                .to($wrapper,1,{css:{right:"0%"}});
+         
+              },
+            activate: function(){
+                console.log ('activate');
+                menuActivateTL.play();
+                responsiveTrigger.deactivate();
+
+             },
+            deactivate: function(){
+                console.log ('deactivate');
+                menuActivateTL.reverse();
+                responsiveTrigger.activate();
+              }
+            },
+        responsiveTrigger = {
+            activateTL: new TimelineMax ({ paused: true}),  // when the menu is clicked
+            // loadTL: new TimelineMax ({paused: true}),  // when the trigger is loaded upon page load
+           
+            init: function (){
+                    this.$location = $('#responsiveTrigger');
+                    responsiveTrigger.state = "ready"; //   
+                that = this;
+            
+                responsiveTrigger.activate();
+                // $('#responsiveTrigger').delay(12000).removeClass("loading");
+                // setTimeout( function(){ 
+                //     // $('#responsiveTrigger').removeClass("loading");
+                //     // $('LI.loading ').removeClass("loading");
+
+                //     var element = document.getElementById("responsiveTrigger");
+                //     element.classList.remove("loading");
+                       
+                // }, 3000 );
+              
+                this.$location.click(function() {
+                    console.log ('click');
+                    console.log ('responsive trigger state = ' + responsiveTrigger.state);
+              
+                    if (responsiveTrigger.state == "ready") {
+                        console.log ('ready and click');
+                        responsiveMenu.activate();
+                        responsiveTrigger.deactivate();
+                    } 
+                    else if (responsiveTrigger.state = "inactive)") {
+                    // else  {
+                        console.log ('click while inactive');
+                        responsiveMenu.deactivate();
+                        responsiveTrigger.activate();
+                    }
+    
+                    });
+                
+                responsiveTrigger.activateTL 
+                    .to($wrapper,1,{opacity: gsDefaultInterval, css:{backgroundColor:"green"}})
+                    .to(responsiveTrigger.$location,gsDefaultInterval, {className:"-=inactive"});
+                   
+                },
+            activate: function (){
+                console.log ('activate');
+                console.log ('wrapper location ' + this.$location);
+                responsiveTrigger.activateTL.play();
+                responsiveTrigger.state = "ready";
+ 
+            },
+            deactivate: function (){
+                console.log ('deactivate');
+                console.log ('wrapper location ' + this.$location);
+                responsiveTrigger.activateTL.reverse();
+                responsiveTrigger.state = "inactive";
+            },
+            
+            load: function(){
+                // alert ('loading');
+                // setTimeout("$('#responsiveTrigger').removeClass('xyzzy')", 2000);
+
+                // $('DIV#responsiveTrigger').removeClass('loading');
+                //  $('#responsiveTrigger').removeClass("xyzzy");
+                // setTimeout(
+                //     function() 
+                //     {
+                //         // responsiveTrigger.loadTL.play();
+                //         // $(this.$location).removeClass('loading');
+                //         alert ('loading3');
+                //         $('#responsiveTrigger').removeClass("xyzzy");
+                //         // $('#responsiveTrigger').addClass("fnord");
+                    // },   1500);
+                
+                // responsiveTrigger.loadTL
+                // .to(this.$location,1,{className:"-=loading"});
+               
+            },
+            click: function (){
+                console.log ('click');
+          
+          
+                responsiveMenu.activate();
+            }
+ 
+        };
+
+    setTimeout( function(){ 
+ 
+
+        var element = document.getElementById("responsiveTrigger");
+        element.classList.remove("loading");
+           
+
+        responsiveMenu.init();
+        responsiveTrigger.init();
+
+  
+
+        
+        setInterval(function(){ 
+            console.log ('status = ' + responsiveTrigger.state); 
+            $('.buttonState h1').text('button state = ').append(responsiveTrigger.state);
+            }, 250);
+
+
+    }, svgLoadDelay);
+
+
+
+
+
+});

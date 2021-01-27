@@ -1,0 +1,96 @@
+/*@media only screen and (max-width: 768px)
+{
+	.SD #navbar UL#menu-primary-1, .SD DIV.topNavPush
+	{
+		display: none;
+	}
+}*/
+#navbar
+{
+	transition:var(--defaultTransition);
+	height:var(--navbarHeight);
+	position: absolute;
+	width: 100%;
+	margin-bottom: 0;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	box-sizing: border-box;
+	display: ;
+}
+body.forceTopMargin #navbar
+{
+	position: relative;
+}
+#SD div.logo.notReady
+{
+	visibility: hidden;
+}
+#SD div.logo a *
+{
+	width: 300px;
+	margin: 0;
+}
+#SD div.logo a *
+{
+	width: 300px;
+	margin: 0;
+}
+#navbar .logo a svg
+{
+	overflow: visible;
+}
+#navbar > .wrapper
+{
+	display: flex;
+	z-index: 655;
+	/*padding:var(--defaultMargin);*/
+	padding: 0;
+	align-items: center;
+	transition:var(--defaultTransition);
+	top: 0;
+	flex-direction: column;
+	align-content: start;
+	align-items: start;
+	margin: 0px;
+	justify-content: center;
+	width:var(--maxWidth);
+	display: ;
+}
+@media only screen and (max-width: 769px)
+{
+	.SD #navbar
+	{
+		display: flex;
+		justify-content: flex-end;
+		align-content: end;
+		align-items: safe flex-end;
+		margin-bottom: 0;
+		padding-bottom:fs;
+	}
+	body.forceTopMargin #navbar
+	{
+		position: relative;
+	}
+	body.forceTopMargin #navbar .boxedWidth .wrapper
+	{
+		position: relative;
+	}
+	#navbar .logo a svg
+	{
+		overflow: visible;
+		max-width: 50vw;
+	}
+	.forceTopMargin #navbar div.boxedWidth.wrapper
+	{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		margin-bottom: calc(var(--defaultInterval)*1);
+	}
+}
+@media only screen and (max-width: 1080px) and (min-width: 768px)
+{
+}

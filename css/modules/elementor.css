@@ -1,0 +1,4 @@
+.SD .elementor-section.elementor-section-boxed > .elementor-container
+{
+	max-width:var(--maxWidth);
+}

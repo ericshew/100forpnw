@@ -1,0 +1,14 @@
+/*!!!!!!!!!!! contact7
+{
+}*/
+FORM.wpcf7-form INPUT.wpcf7-submit
+{
+	background-color:var(--colorNavPrimary);
+	padding:var(--defaultButtonPadding);
+	transition:var(--defaultTransition);
+	font-size:var(--defaultButtonTextSize);
+}
+FORM.wpcf7-form INPUT.wpcf7-submit:hover
+{
+	background-color:var(--colorNavPrimaryHover);
+}

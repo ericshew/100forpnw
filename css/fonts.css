@@ -1,0 +1,26 @@
+@font-face
+{
+	font-family: 'jost';
+	src: url('/wp-content/themes/generatepress_child/fonts/jost-500-medium-webfont.woff2') format('woff2'), url('/wp-content/themes/generatepress_child/fonts/jost-500-medium-webfont.woff') format('woff');
+}
+@font-face
+{
+	font-family: 'jost';
+	font-weight: normal;
+	src: url('/wp-content/themes/generatepress_child/fonts/jost-500-mediumitalic-webfont.woff2') format('woff2'), url('/wp-content/themes/generatepress_child/fonts/jost-500-mediumitalic-webfont.woff') format('woff');
+	font-style: italic;
+}
+@font-face
+{
+	font-family: 'jost';
+	font-weight: normal;
+	src: url('/wp-content/themes/generatepress_child/fonts/jost-800-hevy-webfont.woff2') format('woff2'), url('/wp-content/themes/generatepress_child/fonts/jost-800-hevy-webfont.woff') format('woff');
+	font-weight: bold;
+}
+@font-face
+{
+	font-family: 'jost';
+	src: url('/wp-content/themes/generatepress_child/fonts/jost-800-hevyitalic-webfont.woff2') format('woff2'), url('/wp-content/themes/generatepress_child/fonts/jost-800-hevyitalic-webfont') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}

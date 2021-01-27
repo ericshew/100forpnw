@@ -1,0 +1,30 @@
+#SD a.button
+{
+	font-size:var(--defaultButtonTextSize);
+	padding: 15px;
+}
+#SD a.button, #SD button
+{
+	background-color:var(--colorA);
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius:var(--defaultBorderRadius);
+	padding: calc(var(--defaultInterval)*.5);
+	transition:background-color var(--defaultTransitionDuration), color var(--defaultTransitionDuration);
+	cursor: pointer;
+	margin-right: calc(var(--defaultInterval)*.5);
+}
+/*#SD #content :not(.notReady) .button
+{
+	transition:var(--defaultTransition);
+	background-color: red !important;
+}*/
+#SD #content .button:hover
+{
+	background-color:var(--colorB);
+}
+#SD #content .button.coloredBkg:hover
+{
+	background-color: white;
+	color:var(--colorA);
+}
